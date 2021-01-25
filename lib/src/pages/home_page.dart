@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget{
         title: Text("Titulo"),
         centerTitle: true,
         elevation: 10.0,
-
       ),
       body: Center(
         child: Column(
@@ -22,6 +21,11 @@ class HomePage extends StatelessWidget{
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print("Hola Mundo");
+        },),
     );
   }
 
